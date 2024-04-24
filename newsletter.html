@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <style>
+     body{
+      font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+     }
+     .container{
+      width:80%;
+      margin:0 auto;
+      align-content:center;
+     }
+     .saludo{
+      width:80%;
+      margin:0 auto;
+      text-align:center;
+      margin-bottom:40px;
+      gap:30px;
+      
+     }
+     
+   .flex{
+    flex-direction: row;
+    width:80%;
+    margin:0 auto;
+    align-items:center;
+    display:flex;
+    background-color: rgb(251, 196, 218);
+    height: 300px;
+    justify-content: space-around;
+    padding:40px;
+    align-items:center; /*alínea el contenido de los div en el eje horizontal central*/
+    /*Si quiero que el eje principal sea el vertical, en lugar del horizontal, uso el flex-direction*/
+    
+}
+     .contenido-1{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content: space-around;
+    background-image: url("https://landalayasi.com/wp-content/uploads/2023/11/arq-6-1.jpg");
+    background-size: cover;
+    height: 200px;
+    width:200px;
+    border:1px solid rgb(0, 0, 10);
+    margin-right:40px;
+    margin:20px;
+  }
+ 
+.contenido-1 p{
+    margin-top: 210px;               /* Espacio entre la imagen y el texto */
+    color: black;                    /* Estilo del texto */
+    font-weight: bold;
+    text-align:center;
+}
+
+.contenido-2{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content: space-around;
+    background-image: url("https://landalayasi.com/wp-content/uploads/2023/11/3.jpg");
+    background-size: cover;
+    height: 200px;
+    width:200px;
+    border:1px solid rgb(0, 0, 10);
+    margin-right:40px;
+    margin:20px;
+    text-align:center;
+}
+.contenido-2 p{
+    margin-top: 210px;               /* Espacio entre la imagen y el texto */
+    color: black;                    /* Estilo del texto */
+    font-weight: bold;
+    text-align:center;
+}
+
+.contenido-3{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content: space-around;
+    background-image: url("https://landalayasi.com/wp-content/uploads/2023/11/arrquitectura-3.jpg");
+    background-size:cover;
+    height: 200px;
+    width:200px;
+    border:1px solid rgb(0, 0, 10);
+    margin-right:40px;
+    margin:20px;
+}
+.contenido-3 p{
+    margin-top: 210px;               /* Espacio entre la imagen y el texto */
+    color: black;                    /* Estilo del texto */
+    font-weight: bold;
+}
+.grid {
+  width:80%;
+    margin:0 auto;
+    align-items:center;
+    display:flex;
+    background-color: rgb(148, 239, 251);
+    height: 300px;
+    justify-content: space-around;
+    padding:40px;
+    align-items:center; /*alínea el contenido de los div en el eje horizontal central*/
+    /*Si quiero que el eje principal sea el vertical, en lugar del horizontal, uso el flex-direction*/
+    flex-direction: colum;
+}
+
+.grid-1{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  background-image: url("https://landalayasi.com/wp-content/uploads/2023/11/arq-rosa-y-azul.jpg");
+    background-size:cover;
+    height: 200px;
+    width:200px;
+    border:1px solid rgb(0, 0, 6);
+    margin-right:40px;
+    margin:40px;
+     margin-top:30px;
+    margin-botton:30px;
+}
+.grid-1 p{
+  margin-top: 210px;               /* Espacio entre la imagen y el texto */
+    color: black;                    /* Estilo del texto */
+    font-weight: bold;
+}
+.grid-2{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+    background-image: url("https://landalayasi.com/wp-content/uploads/2023/11/6.jpg");
+    background-size:cover;
+    height: 200px;
+    width:200px;
+    border:1px solid rgb(0, 0, 6);
+    margin-right:40px;
+    margin:40px;
+     margin-top:30px;
+    margin-botton:30px;
+}
+.grid-2 p{
+  margin-top: 210px;               /* Espacio entre la imagen y el texto */
+    color: black;                    /* Estilo del texto */
+    font-weight: bold;
+}
+.grid-3{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  background-image: url("https://landalayasi.com/wp-content/uploads/2023/11/1.jpeg");
+    background-size:cover;
+    height: 200px;
+    width:200px;
+    border:1px solid rgb(0, 0, 6);
+    margin-right:40px;
+    margin:40px;
+     margin-top:30px;
+    margin-botton:30px;
+}
+.grid-3 p{
+  margin-top: 210px;               /* Espacio entre la imagen y el texto */
+    color: black;                    /* Estilo del texto */
+    font-weight: bold;
+}
+
+/* Media query para dispositivos móviles (menor a 768 píxeles) */
+@media only screen and (max-width: 768px) {
+  .flex {
+    flex-direction: row; /* Cambiar a columnas cuando la pantalla es menor a 768px */
+    justify-content: center;
+  }
+
+  /* Opcionalmente, podrías ajustar la altura para móviles para mayor flexibilidad */
+  .contenido-1, .contenido-2, .contenido-3 {
+    height: 150px; /* Ejemplo de ajuste de altura */
+    width: 100%;  /* Para que ocupe el ancho completo en móvil */
+  }
+}
+.titulo-flex{
+  padding:16px;
+  gap:60px;
+   margin:10px;
+   width:80%;
+   margin:0 auto;
+   text-align:center;
+   font-weight: 300;
+}
+.titulo-grid{
+   padding:16px;
+   gap:60px;
+   margin:10px;
+   width:80%;
+   margin:0 auto;
+   text-align:center;
+   font-weight: 400;
+
+}
+.main-container{
+  /* Centrar verticalmente */
+  height: 100%; 
+  padding:16px;
+  background-color:black;
+}
+.main-container a{
+  text-align: center;
+  padding:9px;
+  background-color:black;
+  border:none; 
+  border-radius:18px;
+  color:white;
+
+}
+.main-container p{
+  text-align:jutify;
+  color:white;
+}
+.line{
+  border-top: 1px solid grey;
+  margin-top:40px;
+}
+.myFooter{
+  width:50%;
+  margin:auto;
+  text-align:center;
+  font-family:10px;
+  margin-botton:20px;
+
+}
+.myFooter p{
+  margin:20px;
+  margin-bottom:20px;
+}
+.myFooter a{
+  font-family:7px;
+  margin: 50px;
+  margin-top:30px;
+}
+.black-link {
+  color:white;
+  background-color: black; /* o #000 */
+  
+  text-align: center;
+  padding:9px;
+  background-color:black;
+  border:none; 
+  border-radius:18px;
+  color:white;
+  margin-botton:10px;
+  text-decoration:none;
+}
+.boton {
+  text-align: center;
+  margin-top:40px;
+  margin-botton:40px;
+  padding:20px;
+}
+.boton a {
+  color:white;
+  text-align: center;
+  padding:9px;
+  background-color:black;
+  color:white;
+  border:none; 
+  border-radius:18px;
+  display: inline-block;
+  text-decoration: none;
+}
+/* Estilo básico para centrar y dar espacio a los iconos */
+        .social {
+            text-align: center; /* Centrar el contenido */
+            padding: 10px; 
+            margin:20px;
+            margin-top:20px;
+            margin-botton:20px;     /* Espaciado interno */
+        }
+
+        /* Estilos para cada ícono de redes sociales */
+        .social-media a {
+            margin: 0 10px; /* Espaciado entre iconos */
+            text-decoration: none; /* Eliminar subrayado */
+            margin:30px;
+        }
+
+        .social-media img {
+            width: 24px;  /* Tamaño del icono */
+            height: 24px; /* Tamaño del icono */
+        }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header-logo">
+        
+      </header>
+      <main>
+        <div class="saludo">
+          <h1>Arquitectura</h1></div>
+        <section class="main-container">
+          <p>Al contrario del pensamiento popular, el texto de Lorem Ipsum no es simplemente texto aleatorio. Tiene sus raices en una pieza clásica de la literatura del Latin, que data del año 45 antes de Cristo, haciendo que este adquiera mas de 2000 años de antiguedad. Richard McClintock, un profesor de Latin de la Universidad de Hampden-Sydney en Virginia,</p>
+          <p>El trozo de texto estándar de Lorem Ipsum usado desde el año 1500 es reproducido debajo para aquellos interesados. Las secciones 1.10.32 y 1.10.33 de "de Finibus Bonorum et Malorum"
+          </p>
+            
+        </section>
+        <div class="boton">
+            <a href="https://landalayasi.com/formulario/">Inscribirte</a>
+            </div>
+        </div>
+      <h3 class="titulo-flex">Welcome to Display Flex</h3>
+      <div class="flex">
+      
+        <div  class="contenido-1">
+          <p>Ver Más</p>
+        </div>
+        
+        <div class="contenido-2">
+          <p>Ver Más</p>
+        </div>
+        
+        <div  class="contenido-3">
+          <p>Ver Más</p>
+        </div>
+      
+      </div>
+ <div class="titulo-grid"><h3>Arquitectura Grid Layout CSS</h3></div>
+      <div class="grid">
+        <div  class="grid-1">
+          <p>Shop</p>
+        </div>
+        <div class="grid-2">
+          <p>Shop</p>
+        </div>
+        <div  class="grid-3">
+          <p>Shop</p>
+
+        </div>
+</div>
+        <div class="line"></div>
+        <div class="myFooter">
+          <p>Landa Layasi para <strong>Digital Response</strong>©2024</p>
+          <a href="https://landalayasi.com/unsuscribe/" class="black-link">Unsuscribe</a>
+        </div>
+        <div class="social">
+          <div class="social-media a">
+            <a href="https://www.facebook.com" target="_blank">
+            <img src="https://landalayasi.com/wp-content/uploads/2024/04/FACEBOOK-SOLO-F-1-JPG.jpg" alt="Facebook">
+        </a>
+        <a href="https://www.twitter.com" target="_blank">
+            <img src="https://landalayasi.com/wp-content/uploads/2024/04/twitter-154-svgrepo-com-1-JPG.jpg" alt="Twitter">
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+            <img src="https://landalayasi.com/wp-content/uploads/2024/04/instagram-svgrepo-com-1-JPG.jpg" alt="Instagram">
+        </a>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
